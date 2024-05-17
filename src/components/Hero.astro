@@ -4,25 +4,42 @@ import heroImage from "../../src/images/illustration-working.svg";
 ---
 <section id="hero">
   <!-- hero container -->
-  <div class="container flex flex-col-reverse mx-auto md:flex-row max-w-6xl py-6 px-6 xl:px-0">
+  <div class="container mx-auto grid gap-8 items-center md:grid-cols-2 max-w-6xl py-6 px-6 xl:px-0">
+      <!-- hero image -->
+      <div class="w-[157%] md:order-last mb-8 xl:ml-16">
+        <Image 
+          src={heroImage}
+          alt="Illustration of person working at a computer" 
+        />
+
+      </div>
+
+
     <!-- hero text -->
     <div class="flex flex-col items-center text-center md:items-start md:text-left">
-      <h1 class="mb-4 text-[42px] leading-tight font-bold  lg:text-6xl lg:max-w-md lg:text-left">More than just shorter links</h1>
+      <h1 class="mb-4 font-bold lg:text-6xl lg:max-w-md lg:text-left">More than just shorter links</h1>
       <!-- ToDo: check p text color - apply text center to body?-->
-      <p class="mb-7 text-grayishViolet lg:max-w-md lg:text-left">
+      <p class="mb-7 text-grayishViolet lg:max-w-md lg:text-left lg:text-xl">
         Build your brand's recognition and get detailed insights on how your links are performing.
       </p>
       <a class="rounded-full bg-cyan text-white text-xl font-bold py-3.5 px-10 cursor-pointer hover:opacity-70">Get Started</a>
     </div>
-    <!-- hero image -->
-    <div class="w-[157%] md:w-full mb-8">
-      <Image 
-        src={heroImage}
-        alt="Illustration of person working at a computer" 
-      />
-    </div>
+
   </div>
 
   <!-- <img src="../../src/images/illustration-working.svg" alt=""> -->
 
 </section>
+
+<style>
+  h1 {
+    font-size: 2.625rem;
+    font-size: clamp(2.625rem, 2.15rem + 2.375vw, 5rem);
+    line-height: 1.1;
+    max-width: 14ch;
+  }
+
+  p {
+    max-width: 40ch;
+  }
+</style>
