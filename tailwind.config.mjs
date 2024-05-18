@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				cyan: 'hsl(180, 66%, 49%)',
+				cyanLight: 'hsl(180, 56%, 75%)',
 				darkViolet: 'hsl(257, 27%, 26%)',
 				red: 'hsl(0, 87%, 67%)',
 				gray: 'hsl(0, 0%, 75%)',
@@ -14,6 +15,10 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Poppins', 'sans-serif']
+			},
+			backgroundImage: {
+				'shorten-mobile': "url('./src/images/bg-shorten-mobile.svg')",
+				'shorten-desktop': "url('/src/images/bg-shorten-desktop.svg')",
 			}
 		},
 	},
