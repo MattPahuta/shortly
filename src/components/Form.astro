@@ -1,15 +1,34 @@
 ---
 ---
-<section id="shorten" class="relative">
+<section id="shorten" class="bg-lightGray">
 
-  <div class="max-w-4xl mx-auto p-6 space-y-6">
-    <form class="relative flex flex-col gap-4 w-full p-6 bg-darkViolet bg-shorten-mobile md:bg-shorten-desktop bg-right-top bg-no-repeat rounded-lg md:flex-row md:space-y-0 md:space-x-3">
-      <input type="text" placeholder="Shorten a link" class="min-h-12 px-3 flex-1 rounded-lg ">
+  <div class="max-w-6xl mx-auto p-6 space-y-6">
+    <form class="relative flex flex-col gap-4 p-6 bg-darkViolet bg-shorten-mobile md:bg-shorten-desktop bg-right-top bg-no-repeat rounded-lg md:flex-row md:space-y-0 md:space-x-3">
+      <!-- ToDo: add label (hidden) -->
+      <input type="text" placeholder="Shorten a link" id="link-input" class="min-h-12 px-3 flex-1 rounded-lg ">
       <button class="min-h-12 px-10 py-3 text-white font-bold bg-cyan rounded-lg hover:bg-cyanLight ease-in-out duration-300">Shorten It!</button>
     </form>
 
-    <div id="link-results" class="max-w-4xl mx-auto p-6 space-y-6"></div>
+
 
   </div>
   
 </section>
+
+<!-- <div id="link-results" class="max-w-4xl mx-auto p-6 space-y-6"></div> -->
+
+
+<script>
+  const form = document.querySelector('form');
+  const linkInput = document.getElementById('link-input');
+  
+  function formSubmit(e) {
+    e.preventDefault();
+    
+    console.log('form submitted')
+
+  }
+
+  form.addEventListener('submit', formSubmit)
+
+</script>
