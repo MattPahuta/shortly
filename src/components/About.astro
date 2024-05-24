@@ -1,45 +1,64 @@
 ---
+
+import { Image } from "astro:assets";
+
+import brandIcon from '../../src/images/icon-brand-recognition.svg';
+import recordsIcon from '../../src/images/icon-detailed-records.svg';
+import customizeIcon from '../../src/images/icon-fully-customizable.svg';
 ---
 <section id="about" class="py-24 bg-lightGray">
-  <div class="container mx-auto px-3 text-center">
-    <h2 class="text-4xl mb-6 font-bold">Advanced Statistics</h2>
+  <div class="container mx-auto px-3 pb-28 text-center">
+    <h2 class="text-3xl mb-6 font-bold">Advanced Statistics</h2>
     <p class="">Track how your links are performing across the web with our 
       advanced statistics dashboard.
     </p>
   </div>
   <!-- feature cards container -->
-  <div class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
-    <!-- horizontal line -->
+  <div class="relative container grid items-start px-6 mx-auto md:flex-row md:space-x-7">
+    <!-- decorative line - horizontal -->
     <div class="hidden absoulte top-24 w-1 left-16 h-3 bg-cyan"></div>
-    <!-- vertical line -->
+    <!-- decorative line - vertical -->
     <div class="absolute w-2 left-1/2 h-full -ml-1 bg-cyan md:hidden"></div>
-
-    <!-- card 1 -->
-    <div class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3">
-      <!-- icon -->
-      div
+    <!-- Card Container Grid -->
+    <div class="grid gap-20">
+      <!-- card 1 -->
+      <div class="relative flex flex-col items-center p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+        <!-- icon container-->
+        <div class="absolute -top-10 flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+          <Image 
+          src={brandIcon} 
+          alt=""/>
+        </div>
+        <h3>Brand Recognition</h3>
+        <p>Boost your brand recognition with each click. Generic links don’t 
+          mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+      <!-- card 2 -->
+      <div class="relative flex flex-col items-center p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+        <!-- icon container-->
+        <div class="absolute -top-10 flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+          <Image 
+          src={recordsIcon} 
+          alt=""/>
+        </div>
+        <h3>Detailed Records</h3>
+        <p>Gain insights into who is clicking your links. Knowing when and where 
+          people engage with your content helps inform better decisions.</p>
+      </div>
+      <!-- card 3 -->
+      <div class="relative flex flex-col items-center p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+        <!-- icon container-->
+        <div class="absolute flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+          <Image 
+          src={customizeIcon} 
+          alt=""/>
+        </div>
+        <h3>Fully Customizable</h3>
+        <p>Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.</p>
+      </div>
     </div>
-    <!-- card 2 -->
-
-    <!-- card 3 -->
 
   </div>
-  
 
-  
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
 </section>
