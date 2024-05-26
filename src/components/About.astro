@@ -14,47 +14,46 @@ import customizeIcon from '../../src/images/icon-fully-customizable.svg';
     </p>
   </div>
   <!-- feature cards container -->
-  <div class="relative container grid items-start px-6 mx-auto md:flex-row md:space-x-7">
+  <div class="relative container grid px-6 mx-auto">
     <!-- decorative line - horizontal -->
     <div class="hidden absoulte top-24 w-1 left-16 h-3 bg-cyan"></div>
     <!-- decorative line - vertical -->
     <div class="absolute w-2 left-1/2 h-full -ml-1 bg-cyan md:hidden"></div>
     <!-- Card Container Grid -->
-    <div class="grid gap-20">
+    <div class="grid gap-20 lg:grid-cols-3 text-center">
       <!-- card 1 -->
-      <div class="relative flex flex-col items-center p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+      <div class="relative flex flex-col items-center px-6 py-12 space-y-6 bg-white rounded-lg">
         <!-- icon container-->
-        <div class="absolute -top-10 flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+        <div class="absolute -top-10 flex items-center justify-center w-[88px] h-[88px] p-4 rounded-full bg-veryDarkViolet">
           <Image 
           src={brandIcon} 
           alt=""/>
         </div>
-        <h3>Brand Recognition</h3>
-        <p>Boost your brand recognition with each click. Generic links don’t 
-          mean a thing. Branded links help instil confidence in your content.</p>
+        <h3 class="text-lg">Brand Recognition</h3>
+        <p class="text-sm max-w-md">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
       </div>
       <!-- card 2 -->
-      <div class="relative flex flex-col items-center p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+      <div class="relative flex flex-col items-center px-6 py-12 space-y-6 bg-white rounded-lg">
         <!-- icon container-->
-        <div class="absolute -top-10 flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+        <div class="absolute -top-10 flex items-center justify-center w-[88px] h-[88px] p-4 rounded-full bg-veryDarkViolet">
           <Image 
           src={recordsIcon} 
           alt=""/>
         </div>
-        <h3>Detailed Records</h3>
-        <p>Gain insights into who is clicking your links. Knowing when and where 
+        <h3 class="text-lg">Detailed Records</h3>
+        <p class="text-sm max-w-md">Gain insights into who is clicking your links. Knowing when and where 
           people engage with your content helps inform better decisions.</p>
       </div>
       <!-- card 3 -->
-      <div class="relative flex flex-col items-center p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+      <div class="relative flex flex-col items-center px-6 py-12 space-y-6 bg-white rounded-lg">
         <!-- icon container-->
-        <div class="absolute flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+        <div class="absolute -top-10 flex items-center justify-center w-[88px] h-[88px] p-4 rounded-full bg-veryDarkViolet">
           <Image 
           src={customizeIcon} 
           alt=""/>
         </div>
-        <h3>Fully Customizable</h3>
-        <p>Improve brand awareness and content discoverability through customizable 
+        <h3 class="text-lg">Fully Customizable</h3>
+        <p class="text-sm max-w-md">Improve brand awareness and content discoverability through customizable 
           links, supercharging audience engagement.</p>
       </div>
     </div>

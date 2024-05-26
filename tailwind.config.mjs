@@ -17,6 +17,17 @@ export default {
 			fontFamily: {
 				sans: ['Poppins', 'sans-serif']
 			},
+			fontSize: {
+				sm: '0.938rem', // 15px
+				base: '1rem', // 16px
+				med: '1.125rem', // 18px
+				lg: '1.375rem', // 22px
+				xl: '1.75rem', // 28px
+				'2xl': '2.5rem ', // 40px
+				'3xl': '2.625rem', // 42px
+				'4xl': '3rem', // 48px
+				'5xl': '5rem', // 80px
+			},
 			backgroundImage: {
 				'shorten-mobile': "url('./src/images/bg-shorten-mobile.svg')",
 				'shorten-desktop': "url('/src/images/bg-shorten-desktop.svg')",
