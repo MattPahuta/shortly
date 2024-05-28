@@ -18,9 +18,10 @@ export default {
 				sans: ['Poppins', 'sans-serif']
 			},
 			fontSize: {
-				sm: '0.938rem', // 15px
+				sm: '0.938rem', // 15px 
 				base: '1rem', // 16px
 				med: '1.125rem', // 18px
+				'med-lg': '1.25rem', // 20px
 				lg: '1.375rem', // 22px
 				xl: '1.75rem', // 28px
 				'2xl': '2.5rem ', // 40px
