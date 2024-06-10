@@ -32,6 +32,8 @@ export default {
 			backgroundImage: {
 				'shorten-mobile': "url('./src/images/bg-shorten-mobile.svg')",
 				'shorten-desktop': "url('/src/images/bg-shorten-desktop.svg')",
+				'boost-mobile': "url('/src/images/bg-boost-mobile.svg')",
+				'boost-desktop': "url('/src/images/bg-boost-desktop.svg')",
 			}
 		},
 	},
