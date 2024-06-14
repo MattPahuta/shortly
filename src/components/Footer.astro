@@ -1,22 +1,71 @@
 ---
+import { Image } from "astro:assets";
+import logo from '../../src/images/logo.svg';
+import facebookIcon from '../../src/images/icon-facebook.svg';
+import twitterIcon from '../../src/images/icon-twitter.svg';
+import pinterestIcon from '../../src/images/icon-pinterest.svg';
+import instagramIcon from '../../src/images/icon-instagram.svg';
 ---
-<footer>
-  Features
+<footer class="py-16 bg-veryDarkViolet">
+  <div class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+    <!-- logo -->
+    <Image class="" src={logo} alt="" />
+    <!-- sub-menus container -->
+    <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+      <!-- features menu -->
+      <div class="flex flex-col items-center w-full md:items-start">
+        <h4>Features</h4>
+        <ul>
+          <li><a href="#">Link Shortening</a></li>
+          <li><a href="#">Branded Links</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+      </div>
+      <!-- resources menu -->
+      <div class="flex flex-col items-center w-full md:items-start">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <!-- company menu -->
+      <div class="flex flex-col items-center w-full md:items-start">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- socials list menu -->
+      <div class="flex flex-col items-center w-full md:items-start">
+        <ul>
+          <li>
+            <a href="#">
+              <Image class="" alt="" src={facebookIcon} />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Image class="" alt="" src={twitterIcon} />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Image class="" alt="" src={pinterestIcon} />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Image class="" alt="" src={instagramIcon} />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
 </footer>
