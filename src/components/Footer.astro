@@ -1,66 +1,70 @@
 ---
 import { Image } from "astro:assets";
-import logo from '../../src/images/logo.svg';
+import logo from '../../src/images/logo-white.svg';
 import facebookIcon from '../../src/images/icon-facebook.svg';
 import twitterIcon from '../../src/images/icon-twitter.svg';
 import pinterestIcon from '../../src/images/icon-pinterest.svg';
 import instagramIcon from '../../src/images/icon-instagram.svg';
 ---
 <footer class="py-16 bg-veryDarkViolet">
-  <div class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+  <div class="text-center container flex flex-col items-center justify-between mx-auto space-y-12 md:flex-row md:space-y-0 md:items-start">
     <!-- logo -->
     <Image class="" src={logo} alt="" />
     <!-- sub-menus container -->
-    <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+    <div class="flex flex-col space-y-12">
       <!-- features menu -->
       <div class="flex flex-col items-center w-full md:items-start">
-        <h4>Features</h4>
-        <ul>
-          <li><a href="#">Link Shortening</a></li>
-          <li><a href="#">Branded Links</a></li>
-          <li><a href="#">Analytics</a></li>
+        <h4 class="text-white mb-5">Features</h4>
+        <ul class="text-gray space-y-2">
+          <li><a href="#" class="hover:text-cyan focus:text-cyan">Link Shortening</a></li>
+          <li><a href="#" class="hover:text-cyan focus:text-cyan">Branded Links</a></li>
+          <li><a href="#" class="hover:text-cyan focus:text-cyan">Analytics</a></li>
         </ul>
       </div>
       <!-- resources menu -->
       <div class="flex flex-col items-center w-full md:items-start">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Developers</a></li>
-          <li><a href="#">Support</a></li>
+        <h4 class="text-white mb-5">Resources</h4>
+        <ul class="text-gray space-y-2">
+          <li><a href="#" class="hover:text-cyan focus:text-cyan" >Blog</a></li>
+          <li><a href="#" class="hover:text-cyan focus:text-cyan" >Developers</a></li>
+          <li><a href="#" class="hover:text-cyan focus:text-cyan" >Support</a></li>
         </ul>
       </div>
       <!-- company menu -->
       <div class="flex flex-col items-center w-full md:items-start">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
+        <h4 class="text-white mb-5">Company</h4>
+        <ul class="text-gray space-y-2">
+          <li><a href="#" class="hover:text-cyan focus:text-cyan" >About</a></li>
+          <li><a href="#" class="hover:text-cyan focus:text-cyan" >Our Team</a></li>
+          <li><a href="#" class="hover:text-cyan focus:text-cyan" >Careers</a></li>
+          <li><a href="#" class="hover:text-cyan focus:text-cyan" >Contact</a></li>
         </ul>
       </div>
       <!-- socials list menu -->
-      <div class="flex flex-col items-center w-full md:items-start">
-        <ul>
+      <div>
+        <ul class="flex gap-4 justify-between space-between w-full md:items-start">
           <li>
-            <a href="#">
-              <Image class="" alt="" src={facebookIcon} />
+            <a href="#" class="social-link">
+              <Image class="social-icon" alt="" src={facebookIcon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Image class="" alt="" src={twitterIcon} />
+              <!-- <Image class="" alt="" src={twitterIcon} /> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                <path class="text-cyan hover:text-cyan hover:fill-cyan focus:fill-cyan" fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/>
+              </svg>
             </a>
-          </li>
+          </li> 
           <li>
             <a href="#">
               <Image class="" alt="" src={pinterestIcon} />
             </a>
           </li>
           <li>
-            <a href="#">
-              <Image class="" alt="" src={instagramIcon} />
+            <a href="#" class="">
+              <!-- <Image class="" alt="" src={instagramIcon} /> -->
+              <img src={instagramIcon.src} class="" />
             </a>
           </li>
         </ul>
@@ -69,3 +73,9 @@ import instagramIcon from '../../src/images/icon-instagram.svg';
   </div>
 
 </footer>
+
+<style>
+  .social-link:hover img {
+    fill: orange;
+  }
+</style>

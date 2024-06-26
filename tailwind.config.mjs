@@ -14,6 +14,7 @@ export default {
 				veryDarkBlue: 'hsl(255, 11%, 22%)',
 				veryDarkViolet: 'hsl(260, 8%, 14%)',
 			},
+				
 			fontFamily: {
 				sans: ['Poppins', 'sans-serif']
 			},
